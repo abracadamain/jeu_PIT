@@ -8,3 +8,6 @@ if [ -f countdown.sh ]; then
 else
     echo "Le script countdown.sh n'existe pas."
 fi
+
+#demande de choisir le mot de passe
+read -p "Quel mot de passe choisis-tu ? " reponse
