@@ -37,7 +37,7 @@ done
 
 # Vérifier si le nombre total d'occurrences est égal à 1
 if [ $count -eq 1 ]; then #si le joueur est caché à un seul endroit
-    echo "Tu es bien caché !"
+    echo "Vous êtes bien caché !"
     # Lancer le script de compte à rebours en arrière-plan
     duration=20
     if [ -f countdown.sh ]; then
@@ -51,7 +51,7 @@ if [ $count -eq 1 ]; then #si le joueur est caché à un seul endroit
     #demande de choisir le mot de passe
     while true; do
         # Demande de choisir le mot de passe
-        read -s -p "Choisi un mot de passe pour verouiller ta cachette." mot_de_passe
+        read -s -p "Choisissez un mot de passe pour verouiller votre cachette." mot_de_passe
         echo  # Nouvelle ligne après la saisie masquée
 
         # Demande de confirmer le mot de passe
@@ -79,6 +79,6 @@ if [ $count -eq 1 ]; then #si le joueur est caché à un seul endroit
     echo "Un compte à rebourd de 20 minutes est lancé, vous pouvez le consulter dans time. Vous devez trouver la cachette de $player1_name. Une fois trouvée, lancez le script trouve"
 
 else #si le joueur à écrit son prénom plusieurs fois ou 0 fois
-    echo "Attention tu as écrit ton nom $count fois. Tu dois te cacher à un seul endroit."
+    echo "Attention vous avez écrit votre nom $count fois. Vous devez vous cacher à un seul endroit."
 fi
 
