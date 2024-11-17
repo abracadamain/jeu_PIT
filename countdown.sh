@@ -44,8 +44,8 @@ while [ $initial_time -gt 0 ]; do
     initial_time=$((initial_time - 1))
 done
 
-# Quand le temps est écoulé, écrire "BOOM"
+# Quand le temps est écoulé, écrire "temps écoulé"
 log_message "Countdown is over"
 rm -f ./.countdown_in_progress
-echo "BOOM" > ./.countdown_expired
-echo "BOOM" > $time_file
+echo "temps écoulé" > ./.countdown_expired
+echo "temps écoulé" > $time_file
